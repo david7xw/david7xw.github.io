@@ -82,17 +82,17 @@ q:after {
 /* Full size background image */
 html, #container, .inner { background-color:transparent;}
 html {
-  background:url(white.jpg) center center no-repeat fixed;
+  background:url(background.gif) center center no-repeat fixed;
   background-size:cover;
 }
 body {
   max-width:800px;
   margin:25px auto;
 }
-header, #content, footer { 
-  background: rgba(0,0,0,0.8); 
-  padding:30px;
-  color:#FFFFFF; 
+header, #content, footer {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  color: #FFFFFF;
 }
 iframe {
   max-width:100%;
@@ -107,19 +107,6 @@ ul.main-menu {
   justify-content: left;
   list-style: none;
 }
-ul.main-menu li a {
-  margin-right:20px;
-  font-size:2.0rem;
-  border-bottom: solid transparent 3px;
-  color:#cfd2da;
-}
-ul.main-menu li a:hover {
-  color:#FFFFFF;
-}
-ul.main-menu li a.active {
-  color:#FFFFFF;
-  border-bottom-color:#ffffff;
-}
 
 /* Utility classes */
 .hide {
@@ -130,10 +117,8 @@ ul.main-menu li a.active {
 }
 
 .ribbon {
-  background-color: #f0f0f0; /* Light gray background */
   padding: 15px 0; /* Add some vertical padding */
   text-align: center; /* Center the links */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   position: relative; /* Needed for pseudo-elements (optional ribbon tails) */
 }
 
