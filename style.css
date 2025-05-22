@@ -12,6 +12,8 @@ body {
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
   color: #FFFFFF;
+  max-width: 1100px; /* Increased max-width for the overall content area */
+  margin: 25px auto;
 }
 
 /**
@@ -40,7 +42,7 @@ h4,
 h5,
 h6 {
   line-height: 1;
-  text-rendering: optimizeLegibility; /*  voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
+  text-rendering: optimizeLegibility; /* voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
@@ -82,12 +84,8 @@ q:after {
 /* Full size background image */
 html, #container, .inner { background-color:transparent;}
 html {
-  background:url(background.gif) center center no-repeat fixed;
+  background:url(images/background.gif) center center no-repeat fixed;
   background-size:cover;
-}
-body {
-  max-width:800px;
-  margin:25px auto;
 }
 header, #content, footer {
   background: rgba(0, 0, 0, 0.8);
@@ -176,8 +174,99 @@ ul.main-menu {
   background-color: rgba(0, 0, 0, 0.8)
 }
 
-/* You might need to adjust the padding of your header or main content */
 #header {
   padding-top: 60px;
   margin-top: 54px;  
+}
+
+/* --- Project Card Styles --- */
+
+.projects-grid {
+    display: grid; /* Enable CSS Grid for horizontal layout */
+    /* This will create columns that are at least 300px wide, adjusting to fit as many as possible */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Use minmax for responsive columns */
+    gap: 20px; /* Space between the cards */
+    margin-top: 20px; /* Space below the "Things I've worked on" heading */
+    justify-content: center; /* Center the grid items if there's extra space */
+    align-items: start; /* Align cards to the top of their grid cell */
+}
+
+.project-card {
+    background-color: #272727; /* Dark background, similar to the image */
+    border-radius: 8px; /* Slightly rounded corners */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    color: #f6f6f6; /* Light text color */
+    display: flex; /* Use flexbox for internal layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Pushes content to top/bottom */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+    
+    /* Set a preferred fixed width for the cards when horizontally laid out */
+    width: 300px; /* Adjust this to control the card width */
+    max-width: 100%; /* Ensures it scales down on smaller screens */
+    margin-bottom: 0; /* Remove bottom margin as gap handles spacing for grid */
+    margin-left: 0; /* Remove auto margins as grid handles centering */
+    margin-right: 0; /* Remove auto margins as grid handles centering */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-status {
+    background-color: #5865f2; /* Discord-like blue for status */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    margin-right: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.project-title {
+    font-size: 1.6rem; /* Adjust based on your h3, h4 sizes */
+    font-weight: bold;
+    color: #ffffff;
+    flex-grow: 1; /* Allows title to take available space */
+}
+
+.project-details p {
+    margin: 5px 0;
+    font-size: 1.3rem; /* Smaller font for details */
+    color: #b0b0b0; /* Lighter grey for details */
+}
+
+.project-link:hover {
+    color: #4dc0f9; /* Slightly brighter on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.project-icons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex; /* Arrange icons in a row */
+    align-items: center;
+}
+
+.project-icons img {
+    height: 24px; /* Adjust size as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 12px; /* Space between icons */
+}
+
+.project-description {
+    font-size: 1.4rem; /* Standard paragraph size */
+    color: #cccccc;
+    margin-top: auto; /* Pushes the description to the bottom of the card */
+    padding-top: 10px; /* Space above description if content pushes it down */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+    text-align: justify; /* Justify text for a cleaner look */
 }

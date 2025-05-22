@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
   <head>
-    <!-- Page setup -->
     <meta charset="utf-8">
     <title>david7xw's site</title>
     <meta name="description" content="Welcome!">
@@ -9,23 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="icon" type="image/png" href="favicon.png">
   
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    
-    <!-- Custom styles -->
     <link href="style.css" rel="stylesheet" type="text/css" />
 
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>        
   </head>
   
   <body>
 
     <header id="header">
-      <img src="logo.png">
+      <img src="images/logo.png">
       <h1>Hey! I'm david7xw</h1>
     <nav class="ribbon">
       <ul>
@@ -39,8 +34,7 @@
     </nav>
 
     <ul class="main-menu"> 
-      </ul>  <!-- leave main-menu class empty, workaround for info box being non transparent-->
-    </header>
+      </ul>  </header>
    
     <div id="container">
       <div class="inner">
@@ -53,18 +47,7 @@
             </p>
           </div>
           
-          <html>
-            <head>
-              <title>david7xw's site</title>
-              <style>
-                h2 {
-                  font-weight: bold;
-                }
-              </style>
-            </head>
-            <body>
-
-        <div id="about" class="content-region hide">
+          <div id="about" class="content-region hide">
             <h2>About me</h2>
             <p>
               My name is David, I'm from Romania, can speak Romanian and English pretty well
@@ -72,14 +55,12 @@
             <p>
               I like phones, PCs, well tech in general, also games such as BeamNG, ETS2, Unturned, OneShot.
             </p>
-              </div>
-            </body>
-            </html>
-
-		        <div id="devices" class="content-region hide">
+          </div>
+            
+		  <div id="devices" class="content-region hide">
             <h2>Main stuff:</h2>
             <p>
-              Xiaomi 12 Lite (codenamed Taoyao), 128GB, 8GB RAM
+              Xiaomi 12 Lite (taoyao supremacy), 128GB, 8GB RAM
             </p>
             <p>
               ACER Nitro 5 ANV-15 41, Ryzen 5 7535HS, RTX 4050, 16 GB DDR5 RAM, 512GB NVMe SSD
@@ -91,22 +72,60 @@
             <p>
               HP ProBook 455 G7, Ryzen 3 4300U, 8GB DDR4 RAM, 256GB NVMe SSD, no use for it
             </p>
+          </div>
+            
+      <div id="projects" class="content-region hide">
+            <h2>Project list</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-title">Galaxy A22 OSS</span>
+                    </div>
+                    <div class="project-details">
+                        <p>Status: Recovery boots, nothing else</p>
+                        <p>Work in progress</p>
+                    </div>
+                    <a href="https://github.com/Samsung-MT6769-Devs" class="project-link">Samsung-MT6769-Devs GitHub</a>
+                    <div class="project-icons">
+                        <img src="images/android-logo.png" alt="Android" title="Android Project"> 
+                        <img src="images/github-logo.png" alt="GitHub" title="GitHub Repository">
+                    </div>
+                    <p class="project-description">OSS bringup for the Samsung Galaxy A22.</p>
+                </div>
 
-              </div>
-            </body>
-            </html>
-		  
-		   <div id="projects" class="content-region hide">
-            <h2>Things I've worked on</h2>
-            <p>
-              <a href="https://github.com/Samsung-MT6769-Devs">Galaxy A22 OSS</a>
-            </p>
-            <p>
-              <a href="https://github.com/david7xw/galaxy_a22_overlay">Galaxy A22 GSI overlay</a>
-            </p>
-	    <p>
-              <a href="https://discord.gg/pV8A6nY59K">Upcoming Roblox game by EAST! Studios</a>
-            </p>
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-title">Galaxy A22 GSI Overlay</span>
+                    </div>
+                    <div class="project-details">
+                        <p>For Android Generic System Images</p>
+                        <p>Ensures proper functionality with A22</p>
+                    </div>
+                    <a href="https://github.com/david7xw/galaxy_a22_overlay" class="project-link">david7xw/galaxy_a22_overlay GitHub</a>
+                    <div class="project-icons">
+                        <img src="images/android-logo.png" alt="Android" title="Android GSI">
+                        <img src="images/github-logo.png" alt="GitHub" title="GitHub Repository">
+                    </div>
+                    <p class="project-description">GSI Overlay for Samsung Galaxy A22 4G.</p>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-title">Roblox Game by EAST! Studios</span>
+                    </div>
+                    <div class="project-details">
+                        <p>Work in progress, join the Discord!</p>
+                        <p>Upcoming Roblox game by EAST! Studios</p>
+                    </div>
+                    <a href="https://discord.gg/pV8A6nY59K" class="project-link">EAST! Studios Discord</a>
+                    <div class="project-icons">
+                        <img src="images/roblox-logo.png" alt="Roblox" title="Roblox Game">
+                        <img src="images/discord-logo.png" alt="Discord" title="Discord Server">
+                    </div>
+                    <p class="project-description">Upcoming Roblox game by EA$T Studios.</p>
+                </div>
+            </div>
           </div>
           
           <div id="contact" class="content-region hide">
@@ -125,19 +144,12 @@
 	     <p> 
               Telegram: <a href="https://web.telegram.org/k/#@david7xw">@david7xw</a>
             </p>
-            </body>
-            </html>
-            </p>
           </div>          
         </div>
       </div>
     </div>
 
- 
-    
-    <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
     
   </body>
 </html>
-
