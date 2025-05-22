@@ -307,6 +307,17 @@ ul.main-menu {
     background-color: #00b0f4; /* Different accent color for spotlight */
 }
 
+.project-image-container {
+    text-align: left; /* Center the image if it's smaller than the container */ 
+}
+
+.project-main-image {
+    max-width: 100%; /* Ensures the image doesn't overflow its container */
+    height: 150px; /* Set a fixed height for consistency, or use auto if preferred */
+    object-fit: contain; /* Covers the area, cropping if necessary */
+    border-radius: 10px; /* Slightly rounded corners for the image */
+}
+
 .button {
     display: inline-block;
     background-color: #5865f2; /* Discord blue */
