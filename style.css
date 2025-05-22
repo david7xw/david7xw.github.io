@@ -221,8 +221,6 @@ ul.main-menu {
     margin-bottom: 10px;
 }
 
-
-
 .project-title {
     font-size: 1.6rem; /* Adjust based on your h3, h4 sizes */
     font-weight: bold;
@@ -331,7 +329,7 @@ ul.main-menu {
 .timeline {
     list-style: none;
     padding-left: 20px;
-    border-left: 2px solid #5865f2; /* Vertical line */
+    border-left: 2px solid #ffffff; /* Vertical line */
     margin-bottom: 30px;
 }
 
@@ -383,7 +381,7 @@ ul.main-menu {
 
 .skill-item i {
     font-size: 1.8rem;
-    color: #00b0f4; /* Icon color */
+    color: #ffffff; /* Icon color */
 }
 
 .skill-item:hover {
