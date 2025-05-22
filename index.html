@@ -14,6 +14,8 @@
    
     <link href="style.css" rel="stylesheet" type="text/css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>        
   </head>
   
@@ -42,40 +44,118 @@
           
           <div id="home" class="content-region hide">
             <h2>Hello world!</h2>
-            <p>
-              Welcome to my site! It's basic but gets the job done. See the other categories aswell!
+            <p class="tagline">
+              :3
             </p>
+            <p>
+              Welcome to my site! It's basic but gets the job done. See the other categories as well!
+            </p>
+            <h3>Latest Project Spotlight</h3>
+            <div class="project-spotlight-card">
+                <div class="project-header">
+                    <span class="project-status">Ongoing</span>
+                    <span class="project-title">Galaxy A22 OSS</span>
+                </div>
+                <div class="project-details">
+                    <p>Status: Recovery boots</p>
+                    <p>Booting Android will take a while to debug, WIP</p>
+                </div>
+                <a href="https://github.com/Samsung-MT6769-Devs" class="project-link">Samsung-MT6769-Devs GitHub</a>
+                <div class="project-icons">
+                    <img src="images/android-logo.png" alt="Android" title="Android Project"> 
+                    <img src="images/github-logo.png" alt="GitHub" title="GitHub Repository">
+                </div>
+                <p class="project-description">OSS bringup for the Samsung Galaxy A22.</p>
+                <a href="#projects" class="button">View All Projects</a>
+            </div>
           </div>
           
           <div id="about" class="content-region hide">
             <h2>About me</h2>
             <p>
-              My name is David, I'm from Romania, can speak Romanian and English pretty well
+              My name is David, I'm from Romania, can speak Romanian and English pretty well.
             </p>
             <p>
-              I like phones, PCs, well tech in general, also games such as BeamNG, ETS2, Unturned, OneShot.
+              I like phones, PCs, well tech in general, also games such as BeamNG, ETS2, Unturned, OneShot. I'm interested on how tech works and it's underlying code.
             </p>
+            
+            <h3>My Journey</h3>
+            <ul class="timeline">
+                <li>
+                    <span class="timeline-year">2023</span> - Started tinkering with Android devices and custom ROMs.
+                </li>
+                <li>
+                    <span class="timeline-year">2024</span> - Made my first contribution to an open-source project.
+                </li>
+                <li>
+                    <span class="timeline-year">2025</span> - Began working on my own open-source Android projects.
+                </li>
+            </ul>
+
+            <h3>Skills & Technologies</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-android"></i> Android Development
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-github"></i> Git/GitHub
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-microchip"></i> Kernel Building
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-gamepad"></i> Game Development (Roblox Studio)
+                </div>
+            </div>
           </div>
             
 		  <div id="devices" class="content-region hide">
-            <h2>Main stuff:</h2>
-            <p>
-              Xiaomi 12 Lite (taoyao supremacy), 128GB, 8GB RAM
-            </p>
-            <p>
-              ACER Nitro 5 ANV-15 41, Ryzen 5 7535HS, RTX 4050, 16 GB DDR5 RAM, 512GB NVMe SSD
-            </p>
-            <h2>Other:</h2>
-            <p>
-              Samsung Galaxy A22 4G, working on a <a href="https://github.com/Samsung-MT6769-Devs">OSS bringup</a> for it
-            </p>
-            <p>
-              HP ProBook 455 G7, Ryzen 3 4300U, 8GB DDR4 RAM, 256GB NVMe SSD, no use for it
-            </p>
+            <h2>My Tech Arsenal</h2>
+            <div class="devices-grid">
+                <div class="device-card">
+                    <img src="images/xiaomi-12-lite.png"class="device-image">
+                    <h3>Xiaomi 12 Lite</h3>
+                    <p class="device-spec">128GB Storage, 8GB RAM</p>
+                    <p class="device-role">My daily driver</p>
+                </div>
+                <div class="device-card">
+                    <img src="images/galaxy-a22.png" class="device-image">
+                    <h3>Samsung Galaxy A22 4G</h3>
+                    <p class="device-spec">64GB Storage, 4GB RAM</p>
+                    <p class="device-role">Device used for experiments and such</p>
+                </div>
+                <div class="device-card">
+                    <img src="images/galaxy-a51.png" class="device-image">
+                    <h3>Samsung Galaxy A51</h3>
+                    <p class="device-spec">128GB Storage, 4GB RAM</p>
+                    <p class="device-role">Old main, it's rotting in a drawer, broken screen</p>
+                </div>
+                <div class="device-card">
+                    <img src="images/acer-nitro-5.png" class="device-image">
+                    <h3>ACER Nitro 5 ANV-15 41</h3>
+                    <p class="device-spec">Ryzen 5 7535HS, RTX 4050</p>
+                    <p class="device-spec">16 GB DDR5 RAM, 512GB NVMe SSD</p>
+                    <p class="device-role">Main computer for development, gaming, and heavy tasks</p>
+                </div>
+                <div class="device-card">
+                    <img src="images/hp-probook-455-g7.png" class="device-image">
+                    <h3>HP ProBook 455 G7</h3>
+                    <p class="device-spec">Ryzen 3 4300U, Integrated GPU</p>
+                    <p class="device-spec">8GB DDR4 RAM, 256GB NVMe SSD</p>
+                    <p class="device-role">No current active use, but always ready for a new project.</p>
+                </div>
+                <div class="device-card">
+                    <img src="images/x540sa.png" class="device-image">
+                    <h3>ASUS X540SA</h3>
+                    <p class="device-spec">Intel Celeron, Integrated GPU</p>
+                    <p class="device-spec">4GB DDR3, no drive</p>
+                    <p class="device-role">It's just there, absolutely no use for it</p>
+                </div>
+            </div>
           </div>
             
-      <div id="projects" class="content-region hide">
-            <h2>Project list</h2>
+		  <div id="projects" class="content-region hide">
+            <h2>Things I've worked on</h2>
             
             <div class="projects-grid">
                 <div class="project-card">
@@ -83,8 +163,8 @@
                         <span class="project-title">Galaxy A22 OSS</span>
                     </div>
                     <div class="project-details">
-                        <p>Status: Recovery boots, nothing else</p>
-                        <p>Work in progress</p>
+                        <p>Status: Recovery boots</p>
+                        <p>Booting Android is still WIP</p>
                     </div>
                     <a href="https://github.com/Samsung-MT6769-Devs" class="project-link">GitHub repo page</a>
                     <div class="project-icons">
@@ -129,22 +209,41 @@
           </div>
           
           <div id="contact" class="content-region hide">
-            <h2>Find me on:</h2>
-            <p> 
-              Discord: @david7xw
-            </p>
-            <p> 
-              TikTok:  <a href="https://www.tiktok.com/@7xw_tech">@7xw_tech</a>
-            </p>            <p> 
-              Steam: <a href="https://steamcommunity.com/id/david7xw/">@david7xw</a>
-            </p>
-	     <p> 
-              Github: <a href="https://github.com/david7xw">@david7xw</a>
-            </p>
-	     <p> 
-              Telegram: <a href="https://web.telegram.org/k/#@david7xw">@david7xw</a>
-            </p>
-          </div>          
+            <h2>Get in Touch!</h2>
+            <p>I'm always open to discussing new projects, collaborations, or just a friendly chat about anything. Feel free to reach out through any of the platforms below:</p>
+            <div class="contact-links-grid">
+                <div class="contact-item">
+                    <a href="https://discordapp.com/users/david7xw" target="_blank" aria-label="Discord">
+                        <i class="fab fa-discord"></i> Discord: @david7xw
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.tiktok.com/@7xw_tech" target="_blank" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i> TikTok: @7xw_tech
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://steamcommunity.com/id/david7xw/" target="_blank" aria-label="Steam">
+                        <i class="fab fa-steam"></i> Steam: @david7xw
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://github.com/david7xw" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i> Github: @david7xw
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://web.telegram.org/k/#@david7xw" target="_blank" aria-label="Telegram">
+                        <i class="fab fa-telegram-plane"></i> Telegram: @david7xw
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://web.telegram.org/k/#@david7xw" target="_blank" aria-label="Mail">
+                        <i class="fa-solid fa-envelope-open-text"></i></i> davdavid7xw@gmail.com
+                    </a>
+                </div>
+            </div>
+            </div>          
         </div>
       </div>
     </div>
