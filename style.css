@@ -59,10 +59,9 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
  */
 p {
   margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
-}
-p + p {
+} 
 
-}
+
 
 /**
  * Quotes & Blockquotes
@@ -254,12 +253,14 @@ ul.main-menu {
     margin-bottom: 10px;
     display: flex; /* Arrange icons in a row */
     align-items: center;
+    font-size: 24px;
+    gap: 10px;
+
 }
 
 .project-icons img {
     height: 24px; /* Adjust size as needed */
     width: auto; /* Maintain aspect ratio */
-    margin-right: 12px;
 }
 
 .project-description {
