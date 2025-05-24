@@ -425,6 +425,13 @@ ul.main-menu {
     text-align: center; /* Center content within card */
 }
 
+.device-title {
+    font-size: 1.6rem; /* Adjust based on your h3, h4 sizes */
+    font-weight: bold;
+    color: #ffffff;
+    flex-grow: 1; /* Allows title to take available space */
+}
+
 .device-card:hover {
     transform: translateY(-5px);
 }
